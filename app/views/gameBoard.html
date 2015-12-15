@@ -1,0 +1,7 @@
+<div class="demoApp-boardWrapper" ng-show="showBoard">
+    <ul class="demoApp-board">
+        <li class=" blue lighten-4 demoApp-boardSquare demoApp-float--right"
+            ng-class="{snake: square.start > square.end, ladder:square.start < square.end, yellow:square.start === players[0].currentPos,grey:square.start === players[1].currentPos}"
+            ng-repeat="square in board">{{square.end + 1}}</li>
+    </ul>
+</div>
