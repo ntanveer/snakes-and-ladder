@@ -30,14 +30,5 @@ angular.module('snakesApp').service('board', ['$rootScope',function($rootScope) 
         }
 
         $rootScope.board = board.reverse();
-
-//        for (i = 0; i < 100; ++i) {
-//            if(board[i].start > board[i].end){
-//                board[i].class = board[i].class+'snake ';
-//            }
-//            if(board[i].start < board[i].end){
-//                board[i].class = board[i].class+'ladder ';
-//            }
-//        }
     };
 }]);
